@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "frontend-routing",
+      "prompt": "Build an accessible responsive profile page.",
+      "expectedSkills": [
+        "skill-router",
+        "repo-explorer",
+        "frontend-engineer",
+        "qa-engineer"
+      ]
+    },
+    {
+      "id": "feature-workflow",
+      "prompt": "Coordinate a complete login feature.",
+      "expectedSkills": [
+        "workflow-coordinator",
+        "requirements-checker",
+        "backend-engineer",
+        "frontend-engineer",
+        "security-reviewer",
+        "qa-engineer"
+      ]
+    },
+    {
+      "id": "vague-idea",
+      "prompt": "I want to build an AI app for everyone. Challenge it.",
+      "expectedSkills": [
+        "idea-grinder"
+      ],
+      "expectedOutcome": "challenge-before-build"
+    },
+    {
+      "id": "complex-idea",
+      "prompt": "Should I build a distributed autonomous agent platform?",
+      "expectedSkills": [
+        "idea-grinder",
+        "researcher"
+      ],
+      "expectedOutcome": "evidence-and-falsifiable-experiment"
+    },
+    {
+      "id": "blocked-implementation",
+      "prompt": "The implementation is blocked by a failing integration test.",
+      "expectedSkills": [
+        "execution-grinder",
+        "repo-explorer",
+        "qa-engineer"
+      ]
+    },
+    {
+      "id": "repeated-failure",
+      "prompt": "Two attempted fixes failed; determine whether to continue or stop.",
+      "expectedSkills": [
+        "execution-grinder"
+      ],
+      "expectedOutcome": "bounded-stop-or-escalate"
+    },
+    {
+      "id": "missing-access",
+      "prompt": "The required environment and permission are unavailable.",
+      "expectedSkills": [
+        "execution-grinder",
+        "workflow-coordinator"
+      ],
+      "expectedOutcome": "escalate"
+    },
+    {
+      "id": "evidence-verdict",
+      "prompt": "Produce an evidence-backed recommendation after challenging an idea.",
+      "expectedSkills": [
+        "idea-grinder",
+        "researcher",
+        "technical-writer"
+      ]
+    }
+  ]
+}

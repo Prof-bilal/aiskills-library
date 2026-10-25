@@ -1,0 +1,23 @@
+{
+  "policy": "reference-and-original-wording",
+  "sources": [
+    {
+      "id": "agent-skills-spec",
+      "url": "https://github.com/agentskills/agentskills",
+      "kind": "format-specification",
+      "status": "reference-only"
+    },
+    {
+      "id": "anthropic-skills",
+      "url": "https://github.com/anthropics/skills",
+      "kind": "public-examples",
+      "status": "pattern-reference-only"
+    },
+    {
+      "id": "karpathy-inspired-guidelines",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "kind": "community-behavior-guidance",
+      "status": "inspiration-only"
+    }
+  ]
+}

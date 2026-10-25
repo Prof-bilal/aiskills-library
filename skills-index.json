@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "skills": [
+    {
+      "category": "core",
+      "name": "backend-engineer",
+      "description": "Implement reliable server-side APIs and services with explicit validation, authorization, errors, persistence, and observability. Use for backend behavior, service changes, data flows, or API implementation.",
+      "path": "skills/core/backend-engineer/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "code-reviewer",
+      "description": "Review a change for correctness, security, maintainability, regressions, performance, and missing tests. Use for pull requests, diffs, generated code, or pre-merge review.",
+      "path": "skills/core/code-reviewer/SKILL.md"
+    },
+    {
+      "category": "grind",
+      "name": "execution-grinder",
+      "description": "Persist through implementation blockers using bounded attempts, escalating diagnostics, explicit stop conditions, and honest evidence. Use when implementation is blocked, repeated attempts fail, or uncertainty is slowing delivery.",
+      "path": "skills/grind/execution-grinder/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "frontend-engineer",
+      "description": "Implement maintainable accessible frontend behavior within an existing component, routing, styling, and state system. Use for browser or client UI changes that need responsive and user-state coverage.",
+      "path": "skills/core/frontend-engineer/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "git-workflow",
+      "description": "Perform safe, reviewable Git operations with focused history, branch awareness, and push verification. Use for branches, commits, merges, rebases, releases, and publishing repository changes.",
+      "path": "skills/core/git-workflow/SKILL.md"
+    },
+    {
+      "category": "grind",
+      "name": "idea-grinder",
+      "description": "Pressure-test a product, technical, or business idea with hard questions, counterarguments, evidence requirements, and a falsifiable experiment. Use when a user presents an idea or asks whether something should be built.",
+      "path": "skills/grind/idea-grinder/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "planner",
+      "description": "Turn a request into an executable plan with scope, assumptions, dependencies, risks, and verification steps. Use before non-trivial implementation, migration, debugging, or release work.",
+      "path": "skills/core/planner/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "qa-engineer",
+      "description": "Design and execute risk-based quality checks for a change across happy paths, boundaries, failures, and regressions. Use when confidence in behavior must be demonstrated before delivery.",
+      "path": "skills/core/qa-engineer/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "repo-explorer",
+      "description": "Inspect an unfamiliar repository and produce a concise map of entry points, conventions, commands, ownership, and relevant files. Use before implementation when the repository structure or runtime path is not already known.",
+      "path": "skills/core/repo-explorer/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "requirements-checker",
+      "description": "Find ambiguity, missing states, contradictions, and untestable acceptance criteria in a request or specification. Use when a request is vague, high-impact, or likely to create rework.",
+      "path": "skills/core/requirements-checker/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "researcher",
+      "description": "Gather and synthesize source-backed evidence while separating facts, assumptions, uncertainty, and recommendations. Use for changing technical topics, comparisons, unfamiliar APIs, or decisions needing external evidence.",
+      "path": "skills/core/researcher/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "security-reviewer",
+      "description": "Review a system or change for attack surface, trust boundaries, authorization, secrets, dependencies, and abuse cases. Use for security-sensitive features, integrations, authentication, data handling, or release review.",
+      "path": "skills/core/security-reviewer/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "simplify",
+      "description": "Reduce unnecessary complexity while preserving required behavior, safety, observability, and maintainability. Use when a design, implementation, or plan has speculative layers or duplicated logic.",
+      "path": "skills/core/simplify/SKILL.md"
+    },
+    {
+      "category": "orchestration",
+      "name": "skill-router",
+      "description": "Route a request to the smallest set of compatible skills and define their order, hand-offs, and verification owner. Use when work spans multiple domains, stages, agents, or risk boundaries.",
+      "path": "skills/orchestration/skill-router/SKILL.md"
+    },
+    {
+      "category": "core",
+      "name": "technical-writer",
+      "description": "Write accurate developer documentation from verified behavior, examples, and explicit assumptions. Use for README files, setup guides, API docs, runbooks, or release notes.",
+      "path": "skills/core/technical-writer/SKILL.md"
+    },
+    {
+      "category": "orchestration",
+      "name": "workflow-coordinator",
+      "description": "Coordinate complete feature, bug-fix, research, security, documentation, release, and multi-agent workflows using bounded playbooks. Use when a request needs several stages and a coherent final hand-off.",
+      "path": "skills/orchestration/workflow-coordinator/SKILL.md"
+    }
+  ]
+}
