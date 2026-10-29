@@ -2,6 +2,10 @@
 
 A simple, portable collection of Agent Skills for Codex, Claude Code, Gemini CLI, OpenCode, and other compatible clients. Each skill is a folder containing a `SKILL.md` with YAML metadata and task instructions.
 
+Freebuff is supported as well. Its CLI discovers the same shared `.agents/skills`
+and `.claude/skills` locations, so a global link to this library makes the
+skills available without a second copy.
+
 ## Categories
 
 - **Core:** focused repository, product, implementation, research, review, and Git procedures.
@@ -32,3 +36,16 @@ node scripts/export-agent-views.mjs
 ```
 
 The project uses original instructions and links to public standards. See `sources.json` before adapting public material.
+
+## Freebuff
+
+Install Freebuff, then run it inside a project:
+
+```bash
+npm install -g freebuff
+cd your-project
+freebuff
+```
+
+The shared user-level skills are discovered automatically. Start a new Freebuff
+session after adding or changing a skill.
