@@ -41,3 +41,6 @@ Return risk matrix, test cases, commands and environment, results, defects, skip
 
 ## References
 Read [the relevant reference](../../../references/skill-quality-standard.md) when the task needs deeper standards, rubrics, or hand-off guidance.
+
+## Templates
+Verification report template: [verification-report.md](../../../templates/verification-report.md)

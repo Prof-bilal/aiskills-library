@@ -41,3 +41,6 @@ Return contract summary, invariants, changed files, failure behavior, checks and
 
 ## References
 Read [the relevant reference](../../../references/skill-quality-standard.md) when the task needs deeper standards, rubrics, or hand-off guidance.
+
+## Domain reference
+See [backend-reference.md](../../../references/backend-reference.md) for backend-specific standards and patterns.

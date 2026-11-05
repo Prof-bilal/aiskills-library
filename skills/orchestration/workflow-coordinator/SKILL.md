@@ -41,3 +41,15 @@ Return workflow record with stages, owners, artifacts, gates, accepted or reject
 
 ## References
 Read [the relevant reference](../../../references/orchestration-reference.md) when the task needs deeper standards, rubrics, or hand-off guidance.
+
+## Playbooks
+Available playbooks under `../../../playbooks/`:
+- [feature-delivery.md](../../../playbooks/feature-delivery.md)
+- [bug-fix.md](../../../playbooks/bug-fix.md)
+- [research.md](../../../playbooks/research.md)
+- [security-review.md](../../../playbooks/security-review.md)
+- [documentation.md](../../../playbooks/documentation.md)
+- [release.md](../../../playbooks/release.md)
+
+## Templates
+Workflow plan template: [workflow-plan.md](../../../templates/workflow-plan.md)

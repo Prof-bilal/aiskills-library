@@ -21,11 +21,23 @@ Use workflow-coordinator to plan a complete feature delivery.
 Use execution-grinder when implementation is blocked.
 ```
 
+Example task files under `examples/`:
+- [frontend-task.md](examples/frontend-task.md)
+- [idea-grinder-task.md](examples/idea-grinder-task.md)
+- [orchestration-task.md](examples/orchestration-task.md)
+- [execution-grinder-task.md](examples/execution-grinder-task.md)
+
 ## Layout
 
 Canonical skills live under `skills/<category>/<skill-name>/SKILL.md`. The generated `.agents/skills` and `.claude/skills` directories provide client-compatible views. References, templates, examples, playbooks, and scripts are loaded only when needed.
 
 ## Validate
+
+```bash
+node scripts/check-all.mjs
+```
+
+Individual checks:
 
 ```bash
 node scripts/build-index.mjs
@@ -36,6 +48,10 @@ node scripts/export-agent-views.mjs
 ```
 
 The project uses original instructions and links to public standards. See `sources.json` before adapting public material.
+
+## Windows
+
+The `.agents/skills` and `.claude/skills` views are git symlinks. Run `git config --global core.symlinks true` (needs Developer Mode) before cloning, or run `node scripts/export-agent-views.mjs` after cloning to create local junctions, and do not commit the result.
 
 ## Freebuff
 
