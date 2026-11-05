@@ -41,3 +41,6 @@ Return asset and boundary map, prioritized findings, evidence, remediation, fix 
 
 ## References
 Read [the relevant reference](../../../references/skill-quality-standard.md) when the task needs deeper standards, rubrics, or hand-off guidance.
+
+## Domain reference
+See [security-reference.md](../../../references/security-reference.md) for security-specific standards and patterns.

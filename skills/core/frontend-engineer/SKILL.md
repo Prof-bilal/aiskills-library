@@ -41,3 +41,6 @@ Return state matrix, design decisions, changed files, accessibility and responsi
 
 ## References
 Read [the relevant reference](../../../references/skill-quality-standard.md) when the task needs deeper standards, rubrics, or hand-off guidance.
+
+## Domain reference
+See [frontend-reference.md](../../../references/frontend-reference.md) for frontend-specific standards and patterns.
