@@ -1,8 +1,15 @@
 import { mkdir, rm, symlink, readdir } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
-const root=new URL('..',import.meta.url).pathname;
+import { CATEGORIES, ROOT, normalizeNewlines } from './lib.mjs';
+const windows=process.platform==='win32';
 for(const view of ['.agents/skills','.claude/skills']) {
-  const dir=join(root,view); await rm(dir,{recursive:true,force:true}); await mkdir(dir,{recursive:true});
-  for(const category of ['core','orchestration','grind']) for(const entry of await readdir(join(root,'skills',category),{withFileTypes:true})) if(entry.isDirectory()) await symlink(`../../skills/${category}/${entry.name}`,join(dir,entry.name));
+  const dir=join(ROOT,view); await rm(dir,{recursive:true,force:true}); await mkdir(dir,{recursive:true});
+  for(const category of CATEGORIES) for(const entry of await readdir(join(ROOT,'skills',category),{withFileTypes:true})) {
+    if(!entry.isDirectory()) continue;
+    const link=join(dir,entry.name);
+    if(windows) execFileSync('cmd',['/c','mklink','/J',link,join(ROOT,'skills',category,entry.name)],{stdio:'ignore'});
+    else await symlink(`../../skills/${category}/${entry.name}`,link);
+  }
 }
 console.log('Exported agent views');
