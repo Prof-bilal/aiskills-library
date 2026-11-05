@@ -41,3 +41,6 @@ Return review scope, ordered findings, positive observations, test evidence, ski
 
 ## References
 Read [the relevant reference](../../../references/skill-quality-standard.md) when the task needs deeper standards, rubrics, or hand-off guidance.
+
+## Templates
+Code review report template: [code-review-report.md](../../../templates/code-review-report.md)

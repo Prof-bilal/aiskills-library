@@ -42,3 +42,6 @@ Return blocker statement, evidence, attempt log, new experiment, result, stop co
 
 ## References
 Read [the relevant reference](../../../references/challenge-framework.md) when the task needs deeper standards, rubrics, or hand-off guidance.
+
+## Templates
+Blocker log template: [blocker-log.md](../../../templates/blocker-log.md)

@@ -21,6 +21,12 @@ Use workflow-coordinator to plan a complete feature delivery.
 Use execution-grinder when implementation is blocked.
 ```
 
+Example task files under `examples/`:
+- [frontend-task.md](examples/frontend-task.md)
+- [idea-grinder-task.md](examples/idea-grinder-task.md)
+- [orchestration-task.md](examples/orchestration-task.md)
+- [execution-grinder-task.md](examples/execution-grinder-task.md)
+
 ## Layout
 
 Canonical skills live under `skills/<category>/<skill-name>/SKILL.md`. The generated `.agents/skills` and `.claude/skills` directories provide client-compatible views. References, templates, examples, playbooks, and scripts are loaded only when needed.
