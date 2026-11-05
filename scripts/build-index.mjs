@@ -4,16 +4,25 @@ import { CATEGORIES, ROOT, normalizeNewlines } from './lib.mjs';
 const check=process.argv.includes('--check');
 const indexFile=join(ROOT,'skills-index.json');
 const skills=[];
+const errors=[];
 for (const category of CATEGORIES) {
   for (const entry of await readdir(join(ROOT,'skills',category), {withFileTypes:true})) {
     if (!entry.isDirectory()) continue;
     const file=join(ROOT,'skills',category,entry.name,'SKILL.md');
+    const rel=`skills/${category}/${entry.name}/SKILL.md`;
     const text=normalizeNewlines(await readFile(file,'utf8'));
     const fm=text.match(/^---\n([\s\S]*?)\n---/);
-    const name=fm?.[1].match(/^name:\s*(\S+)/m)?.[1];
-    const description=fm?.[1].match(/^description:\s*(.+)$/m)?.[1]?.trim();
-    skills.push({category,name,description,path:`skills/${category}/${entry.name}/SKILL.md`});
+    if (!fm) { errors.push(`${rel}: missing frontmatter`); continue; }
+    const name=fm[1].match(/^name:\s*(\S+)/m)?.[1];
+    const description=fm[1].match(/^description:\s*(.+)$/m)?.[1]?.trim();
+    if (!name) { errors.push(`${rel}: missing name`); continue; }
+    if (!description) { errors.push(`${rel}: missing description`); continue; }
+    skills.push({category,name,description,path:rel});
   }
+}
+if (errors.length) {
+  for (const error of errors) console.error(error);
+  process.exit(1);
 }
 skills.sort((a,b)=>a.name.localeCompare(b.name));
 const output=JSON.stringify({schemaVersion:1,skills},null,2)+'\n';
