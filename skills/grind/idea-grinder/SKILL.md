@@ -42,3 +42,6 @@ Return idea restatement, user/problem, assumptions, challenge questions, counter
 
 ## References
 Read [the relevant reference](../../../references/challenge-framework.md) when the task needs deeper standards, rubrics, or hand-off guidance.
+
+## Templates
+Idea challenge report template: [idea-challenge-report.md](../../../templates/idea-challenge-report.md)

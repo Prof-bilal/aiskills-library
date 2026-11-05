@@ -41,3 +41,6 @@ Return decision-complete plan with goal, non-goals, evidence, ordered steps, dep
 
 ## References
 Read [the relevant reference](../../../references/skill-quality-standard.md) when the task needs deeper standards, rubrics, or hand-off guidance.
+
+## Templates
+Task plan template: [task-plan.md](../../../templates/task-plan.md)
